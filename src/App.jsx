@@ -54,8 +54,6 @@ function App() {
         <Route path="/blog-post" element={<BlogPost />} />
         <Route path="/about" element={<About />} />
         <Route path="/documentation" element={<Documentation />} />
-        <Route path="/support" element={<Help />} />
-        <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="*" element={<PageNotFound />} />
