@@ -4,6 +4,7 @@ import Header from '../partials/Header';
 import HeroHome from '../partials/HeroHome';
 import FeaturesHome from '../partials/FeaturesHome';
 import FeaturesBlocks from '../partials/FeaturesBlocks';
+import Projects from '../partials/Projects'; 
 import FeaturesWorld from '../partials/FeaturesWorld';
 import News from '../partials/News';
 import Cta from '../partials/Cta';
@@ -21,6 +22,7 @@ function Home() {
 
         {/*  Page sections */}
         <HeroHome />
+        <Projects />
         <FeaturesBlocks />
         <FeaturesHome />
         {/* <FeaturesWorld />
