@@ -1,30 +1,18 @@
-const defineConfig = require('vite').defineConfig;
-const postcss = require('./postcss.config.js');
-const react = require('@vitejs/plugin-react');
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
-
-module.exports = {
-  define: {
-    'process.env': process.env
-  },
-  root: '.',
-  css: {
-    postcss,
-  },
+export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: [
-      {
-        find: /^~.+/,
-        replacement: (val) => {
-          return val.replace(/^~/, "");
-        },
-      },
-    ],
+    alias: {
+      '~': path.resolve(__dirname, 'node_modules'),
+      '@': path.resolve(__dirname, 'src'),
+    },
   },
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,
     }
-  } 
-};
+  }
+});
