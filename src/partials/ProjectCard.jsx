@@ -25,7 +25,6 @@ const ProjectCard = ({ title, skills, description, image, link }) => {
             ))}
           </div>  
           <p>{description}</p>
-          <AnimatedButton link={link} />
         </div>
       </div>
     </div>

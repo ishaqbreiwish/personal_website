@@ -26,3 +26,214 @@
 // AOS styles
 $aos-distance: 10px;
 @import 'node_modules/aos/src/sass/aos.scss';
+
+  .project-image img {
+    width: 50%;       /* Image fills the width of its container */
+    max-width: 400px;  /* Maximum width it can grow to */
+    height: auto;
+  }
+
+  .projects-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px; // Limit the maximum width
+    margin: 0 auto; // Center the grid
+  }
+  
+  .project-card {
+    background-color: #f7fafc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  
+  .project-image img {
+    width: 100%;
+    height: 200px; // Fixed height for consistency
+    object-fit: cover; // Ensure the image covers the area without distortion
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+
+  .project-title {
+    font-size: 1.2em; // Slightly smaller font size
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 10px;
+  }
+  
+  .project-details {
+    color: #4a5568;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // Pushes content to top and bottom
+  }
+  
+  .skills {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-tag {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    color: #fff;
+    border-radius: 0;
+    border: 2px solid; 
+    display: inline-block; 
+  }
+
+  .skill-tag.react {
+    background-color: #4ba8bf;
+    border-color: #3c8496;
+  }
+
+  .skill-tag.python {
+    background-color: #dbba32;
+    border-color: #a68707;
+  }
+
+  .skill-tag.django {
+    background-color: #168a5b;
+    border-color: #0c4c32;
+  }
+
+  .skill-tag.firebase {
+    background-color: #dc2c01;
+    border-color: #9c1f00;
+  }
+
+  .skill-tag.aws {
+    border-color: #f8981a ;
+    background-color: #272e3a;
+  }
+
+  .skill-tag.openai {
+    background-color: #977bbf;
+    border-color: #5f4f75;
+  }  
+
+  .skill-tag.pinecone {
+    background-color: #333333;
+    border-color: #0d0d0d;
+  }
+
+  .skill-tag.tensorflow {
+    background-color: #ff6f00;
+    border-color: #b84e00;
+  }
+
+  .skill-tag.fastapi {
+    background-color:  #059788;
+    border-color: #04756a;
+  }
+
+  @media (max-width: 768px) {
+    .projects-section {
+      grid-template-columns: 1fr;
+    }
+
+    .project-details {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .project-image img {
+      max-width: 100%;
+    }
+  }
+  
+  .education-section {
+    background-color: #ffffff;
+    color: #333333; // Adjust this to match your text color
+    padding: 60px 0;
+    font-family: 'Inter', sans-serif; // Ensure this matches your website's font
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  
+    .education-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+  
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+  
+    .education-info, .coursework {
+      flex: 1;
+    }
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: #1a202c; // Adjust this to match your heading color
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 10px;
+        font-size: 1rem;
+      }
+    }
+  
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+  
+    .course-item {
+      background-color: #f7fafc; // Light gray background for cards
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      
+      .course-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      
+  
+      .code-icon, .math-icon {
+        font-size: 1.5rem;
+        color: #338df4; // Keeping the blue color for icons
+      }
+  
+      p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #4a5568; // Slightly darker text for contrast
+      }
+    }
+  }

@@ -9,6 +9,10 @@ import FeaturesWorld from '../partials/FeaturesWorld';
 import News from '../partials/News';
 import Cta from '../partials/Cta';
 import Footer from '../partials/Footer';
+import ProjectsSection from '../partials/ProjectsSection';
+import Education from '../partials/EducationSection';
+import WorkExperience from '../partials/WorkExperience';
+import GetInTouch from '../partials/GetInTouch';
 
 function Home() {
   return (
@@ -22,9 +26,11 @@ function Home() {
 
         {/*  Page sections */}
         <HeroHome />
-        <Projects />
-        <FeaturesBlocks />
-        <FeaturesHome />
+        <Education />
+        <WorkExperience />
+        <ProjectsSection />
+        <GetInTouch />
+
         {/* <FeaturesWorld />
         <News />
         <Cta /> */}

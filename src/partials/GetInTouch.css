@@ -1,0 +1,75 @@
+.get-in-touch-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+    font-family: 'Inter', sans-serif; /* Adjust to match your website's font */
+  }
+  
+  .get-in-touch-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .get-in-touch-section h2 {
+    font-size: 2.5rem;
+    color: #1a202c;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: left; /* Left-aligned as requested */
+  }
+  
+  .contact-card {
+    background-color: #f7fafc;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #4a5568;
+  }
+  
+  .contact-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .contact-icon {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add spacing between the icon and the text */
+    vertical-align: middle;
+  }
+  
+  
+  .contact-item .contact-item span {
+    line-height: 1.5; /* Ensures the text is vertically centered */
+  }
+  
+  .contact-item a:hover {
+    color: #3182ce;
+  }
+  
+  @media (max-width: 768px) {
+    .get-in-touch-section h2 {
+      font-size: 2rem;
+    }
+  
+    .contact-card {
+      padding: 20px;
+    }
+  
+    .contact-item {
+      font-size: 0.9rem;
+    }
+  }

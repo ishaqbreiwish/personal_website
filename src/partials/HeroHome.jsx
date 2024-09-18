@@ -3,7 +3,7 @@ import Modal from '../utils/Modal';
 import linkedinIcon from '../images/linkedin.png'; 
 import resumeIcon from '../images/resume.png'; 
 import HeroImage from '../images/hero-image-01.png';
-import ishaqImage from '../images/ishaq.png';
+import ishaqImage from '../images/ishaq.jpeg';
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);

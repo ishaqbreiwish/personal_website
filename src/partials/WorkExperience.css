@@ -1,0 +1,84 @@
+.work-experience-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.work-experience-section h2 {
+  font-size: 2.5rem;
+  color: #1a202c;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.experience-card {
+  background-color: #f7fafc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left; /* Ensure all content is left-aligned */
+}
+
+.experience-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.company-logo {
+  width: 35px; /* Adjust the width to make it smaller */
+  height: auto; /* Maintain the aspect ratio */
+  margin-left: 10px; /* Ensure proper spacing between the logo and text */
+}
+
+
+.company-info h3 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin: 0;
+}
+
+.position {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 5px;
+}
+
+.period {
+  font-size: 0.9rem;
+  color: #718096;
+  margin-bottom: 15px;
+}
+
+.achievements {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.achievements li {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
