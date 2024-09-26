@@ -1,8 +1,5 @@
 import React from 'react';
 import './WorkExperience.css'; // Make sure to create this CSS file
-import flexboneLogo from '../images/flexbone_logo.svg';
-import mbruLogo from '../images/mbru_icon.png'
-
 
 const WorkExperience = () => {
   const experiences = [
