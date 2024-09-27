@@ -1,9 +1,9 @@
 import React from 'react';
-import './GetInTouch.css';
 import mail_icon from '../images/mail_icon.png';
 import location_icon from '../images/location_icon.png';
 import phone_icon from '../images/phone_icon.png';
 import linkedin_icon from '../images/linkedin_icon.png';
+import '../css/GetInTouch.css';
 
 const GetInTouch = () => {
   const contactInfo = [

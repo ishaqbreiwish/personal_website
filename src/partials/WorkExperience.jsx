@@ -1,5 +1,5 @@
 import React from 'react';
-import './WorkExperience.css'; // Make sure to create this CSS file
+import '../css/WorkExperience.css'; // Make sure to create this CSS file
 
 const WorkExperience = () => {
   const experiences = [
