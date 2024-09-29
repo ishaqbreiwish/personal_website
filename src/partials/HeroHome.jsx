@@ -95,7 +95,7 @@ function HeroHome() {
                   {/* Resume Button */}
                   <li>
                     <a
-                      href="https://drive.google.com/file/d/1DvFMB-f4ELX5jVXYACTxnuYkmxWA4rKj/view?usp=drive_link"
+                      href="https://drive.google.com/file/d/1GAKwsnUheFbA9ZCnFTTJMaxenRONYkA9/view?usp=sharing"
                       className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out w-16 h-16 transform hover:scale-110"
                       aria-label="Resume"
                       target="_blank"

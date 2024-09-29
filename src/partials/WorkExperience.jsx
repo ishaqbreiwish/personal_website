@@ -19,10 +19,11 @@ const WorkExperience = () => {
       position: "Software Engineer Intern",
       period: "June 2024",
       achievements: [
-        "Built a chatbot using Flask and OpenAI API to provide personalized oral hygiene advice from dental guidelines.",
-        "Set up Firebase authentication to securely store user profiles and enable persistent, personalized interactions.",
-        "Leveraged Retrieval-Augmented Generation (RAG) to enhance the chatbot's accuracy and context awareness, ensuring better recommendations based on relevant dental guidelines.",
-        "Integrated Pinecone as a vector database, optimizing read/write operations to significantly improve performance and retrieval speed for personalized user interactions."
+        "Developed an innovative chatbot utilizing the OpenAI API to deliver personalized dental advice and promote oral health awareness among users.",
+        "Implemented Langchain to enhance the chatbot's capabilities through Retrieval-Augmented Generation (RAG), ensuring highly accurate and context-aware responses.",
+        "Leveraged AWS Lambda for deployment, implementing serverless functions to automatically handle fluctuating traffic volumes.",
+
+        "Integrated Pinecone as a vector database, optimizing read/write operations to significantly improve performance and retrieval speed."
       ]
     },
   ];
